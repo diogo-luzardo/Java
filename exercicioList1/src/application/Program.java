@@ -28,9 +28,10 @@ public class Program {
 			String name = sc.nextLine();
 			System.out.println("Salary");
 			double salary = sc.nextDouble();
-			
-			
+			list.add(new Employee(id, name, salary));
 		}
+		
+		
 	}
 
 }
