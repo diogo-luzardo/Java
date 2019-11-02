@@ -21,10 +21,11 @@ public class Program {
 		
 		for(int i = 1; i <= n; i++) {
 			System.out.println();
-			System.out.println("Employee:" + 1 + ": ");
+			System.out.println("Employee" + 1 + ": ");
 			System.out.print("ID: ");
 			int id = sc.nextInt();
-			System.out.println("Name: ");
+			System.out.print("Name: ");
+			sc.nextLine();
 			String name = sc.nextLine();
 			System.out.print("Salary");
 			double salary = sc.nextDouble();
