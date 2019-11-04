@@ -27,7 +27,7 @@ public class Program {
 			System.out.print("Name: ");
 			sc.nextLine();
 			String name = sc.nextLine();
-			System.out.print("Salary");
+			System.out.print("Salary: ");
 			double salary = sc.nextDouble();
 			list.add(new Employee(id, name, salary));
 		}
