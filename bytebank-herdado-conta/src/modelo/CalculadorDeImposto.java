@@ -1,4 +1,6 @@
+package modelo;
 
+//verdadeiro nome apartir do pacote modelo.CalculadorDeImposto => FQN
 public class CalculadorDeImposto {
 	
 	private double totalImposto;
