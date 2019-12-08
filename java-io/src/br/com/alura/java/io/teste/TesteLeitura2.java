@@ -19,13 +19,14 @@ public class TesteLeitura2 {
 			linhaScanner.useLocale(Locale.US);
 			linhaScanner.useDelimiter(",");
 
-			String valor1 = linhaScanner.next();
-			int valor2 = linhaScanner.nextInt();
-			int valor3 = linhaScanner.nextInt();
-			String valor4 = linhaScanner.next();
-			double valor5 = linhaScanner.nextDouble();
+			String tipoConta = linhaScanner.next();
+			int agencia = linhaScanner.nextInt();
+			int numero = linhaScanner.nextInt();
+			String titular = linhaScanner.next();
+			double saldo = linhaScanner.nextDouble();
 			
-			String valorFormatado = String.format("%s - %d-%d, %s: %f", valor1, valor2, valor3, valor4, valor5);
+			String valorFormatado = String.format(new Locale("pt", "BR") ,"%s - %04d-%08d, %s: %.2f", 
+													tipoConta, agencia, numero, titular, saldo);
 			System.out.println(valorFormatado);
 
 			linhaScanner.close();
