@@ -9,6 +9,7 @@ public class Curso {
 	private String nome;
 	private String instrutor;
 	private List<Aula> aulas = new ArrayList<Aula>();
+	private List<Aluno> alunos = new ArrayList<Aluno>();
 	
 	public Curso(String nome, String instrutor) {
 		super();
@@ -40,6 +41,18 @@ public class Curso {
 	public String toString() {
 		return "[Curso: " + nome + ", tempo total: " + this.getTempoTotal() + ","
 				+ "aulas: " + this.getAulas() + "]";
+	}
+
+	public void matricula(Aluno aluno) {
+		this.alunos.add(aluno);
+	}
+	
+	public List<Aluno> getAlunos() {
+		return Collections.unmodifiableList(alunos);
+	}
+
+	public boolean estaMatriculado(Aluno aluno) {
+		return this.alunos.contains(aluno);
 	}
 
 }
