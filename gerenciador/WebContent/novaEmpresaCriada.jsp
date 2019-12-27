@@ -1,5 +1,8 @@
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
+
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,11 +10,15 @@
 	<title>Document</title>
 </head>
 
-<%
-	String nomeEmpresa = (String)request.getAttribute("empresa");
-	System.out.println(nomeEmpresa);	
-%>
 <body>
-	Empresa <%= nomeEmpresa %> cadastrada com sucesso.
+
+	<c:if test="${not empty empresa }">
+		Empresa ${ empresa } cadastrada com sucesso.
+	</c:if>
+	
+	<c:if test="${empty empresa }">
+		Nenhuma empresa cadastrada com sucesso.
+	</c:if>
 </body>
+
 </html>
