@@ -1,4 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
 <fullyQualifiedTypeName name="javax.servlet.Filter"/>
+<fullyQualifiedTypeName name="com.thoughtworks.xstream.XStream"/>
+<fullyQualifiedTypeName name="org.apache.http.client.fluent.Request"/>
+<fullyQualifiedTypeName name="com.google.gson.Gson"/>
+<fullyQualifiedTypeName name="java.lang.System"/>
 </qualifiedTypeNameHistroy>
