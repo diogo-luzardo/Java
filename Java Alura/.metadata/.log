@@ -504,3 +504,21 @@ java.lang.NullPointerException
 
 !ENTRY org.eclipse.jdt.launching 4 4 2020-01-09 19:40:08.272
 !MESSAGE Xbootclasspath option have been removed as not supported beyond Java 8.
+
+!ENTRY org.eclipse.jdt.launching 4 4 2020-01-09 20:02:00.123
+!MESSAGE Xbootclasspath option have been removed as not supported beyond Java 8.
+
+!ENTRY org.eclipse.jdt.launching 4 4 2020-01-09 20:02:01.549
+!MESSAGE Xbootclasspath option have been removed as not supported beyond Java 8.
+
+!ENTRY org.eclipse.jdt.launching 4 4 2020-01-12 08:19:33.615
+!MESSAGE Xbootclasspath option have been removed as not supported beyond Java 8.
+
+!ENTRY org.eclipse.jdt.launching 4 4 2020-01-12 08:19:34.958
+!MESSAGE Xbootclasspath option have been removed as not supported beyond Java 8.
+
+!ENTRY org.eclipse.jdt.launching 4 4 2020-01-12 08:27:41.458
+!MESSAGE Xbootclasspath option have been removed as not supported beyond Java 8.
+
+!ENTRY org.eclipse.jdt.launching 4 4 2020-01-12 08:27:42.666
+!MESSAGE Xbootclasspath option have been removed as not supported beyond Java 8.

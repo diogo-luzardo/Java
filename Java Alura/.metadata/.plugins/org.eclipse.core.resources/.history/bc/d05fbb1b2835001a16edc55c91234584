@@ -32,7 +32,6 @@ public class Banco {
 		
 		listaUsuarios.add(u1);
 		listaUsuarios.add(u2);
-		listaUsuarios.add(u3);
 	}
 
 	public void adiciona(Empresa empresa) {
