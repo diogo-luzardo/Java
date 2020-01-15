@@ -9,8 +9,8 @@ public class TesteConta {
 	
 	public static void main(String[] args) {
 		Conta conta = new Conta();
-		conta.setTitular("Diogo");
-		conta.setBanco("Inter");
+		conta.setTitular("Danilo");
+		conta.setBanco("Itau");
 		conta.setAgencia("123");
 		conta.setNumero("456");
 		
@@ -18,9 +18,22 @@ public class TesteConta {
 
 		em.getTransaction().begin();
 		em.persist(conta);
+		
+		conta.setBanco("Bradesco");
+		
 		em.getTransaction().commit();
 		
 		em.close();
+		
+		EntityManager em2 = new JPAUtil().getEntityManager();
+		em2.getTransaction().begin();
+		
+		conta.setTitular("Leonardo");
+		em2.merge(conta);
+		
+		em2.getTransaction().commit();
+		em2.close();
+		
 	
 	}
 }
