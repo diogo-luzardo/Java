@@ -4,10 +4,13 @@ import java.math.BigDecimal;
 import java.util.Arrays;
 import java.util.Calendar;
 
+import javax.persistence.EntityManager;
+
 import br.com.caelum.financas.modelo.Categoria;
 import br.com.caelum.financas.modelo.Conta;
 import br.com.caelum.financas.modelo.Movimentacao;
 import br.com.caelum.financas.modelo.TipoMovimentacao;
+import br.com.caelum.financas.util.JPAUtil;
 
 public class TesteMovimentacoesComCategoria {
 
@@ -36,6 +39,18 @@ public class TesteMovimentacoesComCategoria {
 		movimentacao2.setCategorias(Arrays.asList(categoria1, categoria2));
 		
 		movimentacao2.setConta(conta);
+		
+		EntityManager em = new JPAUtil().getEntityManager();
+		em.getTransaction().begin();
+		
+		em.persist(categoria1);
+		em.persist(categoria2);
+		
+		em.persist(movimentacao1);
+		em.persist(movimentacao2);
+		
+		em.getTransaction().commit();
+		em.close();
 		
 	}
 
