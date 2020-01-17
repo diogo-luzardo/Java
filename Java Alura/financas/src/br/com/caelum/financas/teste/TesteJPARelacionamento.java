@@ -26,12 +26,13 @@ public class TesteJPARelacionamento {
 		movimentacao.setTipo(TipoMovimentacao.SAIDA);
 		movimentacao.setValor(new BigDecimal("200.0"));
 		
-		
+		movimentacao.setConta(conta);
 		
 		EntityManager em = new JPAUtil().getEntityManager();
 		em.getTransaction().begin();
 		
-		
+		em.persist(conta);
+		em.persist(movimentacao);
 		
 		em.getTransaction().commit();
 		em.close();
