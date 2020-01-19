@@ -94,6 +94,10 @@ public class Movimentacao {
 	public void setDescricao(String descricao) {
 		this.descricao = descricao;
 	}
+
+	public void setTipoMovimentacao(TipoMovimentacao tipo) {
+		this.tipo = tipo;
+	}
 	
 	
 }
